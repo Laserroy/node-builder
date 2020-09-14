@@ -1,0 +1,17 @@
+{
+    "name": "xray/node-builder",
+    "authors": [
+        {
+            "name": "Laserroy",
+            "email": "deectro@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-sqlite3": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
