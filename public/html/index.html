@@ -61,10 +61,13 @@
                 $(this).parent().remove();
             }
         });
+        $(document).on('load', function () {
+            $.get();
+        });
         
         $(document).ready(function () {
             $('.main').on('DOMSubtreeModified', function () {
-            $.post('/index.php', {html: $('.main').val()});
+            $.post('/index.php', {html: $('.main').html()});
         });
         });
 
