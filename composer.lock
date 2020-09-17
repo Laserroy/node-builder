@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4010e96c5d04efae74cbc7c7dc3eaf2f",
+    "content-hash": "53a70ed5280a127651e9fc6f7ddbf5cf",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -96,60 +96,6 @@
                 }
             ],
             "time": "2020-05-29T15:13:26+00:00"
-        },
-        {
-            "name": "eftec/bladeone",
-            "version": "3.47",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/EFTEC/BladeOne.git",
-                "reference": "3580cd1ca291a560697d2c6c33e7efe2420f9462"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/3580cd1ca291a560697d2c6c33e7efe2420f9462",
-                "reference": "3580cd1ca291a560697d2c6c33e7efe2420f9462",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.16.1",
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.5.4"
-            },
-            "suggest": {
-                "eftec/bladeonehtml": "Extension to create forms",
-                "ext-mbstring": "This extension is used if it's active"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "eftec\\bladeone\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jorge Patricio Castro Castillo",
-                    "email": "jcastro@eftec.cl"
-                }
-            ],
-            "description": "The standalone version Blade Template Engine from Laravel in a single php file",
-            "homepage": "https://github.com/EFTEC/BladeOne",
-            "keywords": [
-                "blade",
-                "php",
-                "template",
-                "templating",
-                "view"
-            ],
-            "time": "2020-08-30T19:30:33+00:00"
         },
         {
             "name": "illuminate/container",
@@ -1154,7 +1100,59 @@
             "time": "2020-07-22T23:32:04+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "e97627871a7eab2f70e59166072a6b767d5834e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/e97627871a7eab2f70e59166072a6b767d5834e0",
+                "reference": "e97627871a7eab2f70e59166072a6b767d5834e0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2020-08-10T04:50:15+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
