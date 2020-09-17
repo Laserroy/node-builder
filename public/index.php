@@ -1,7 +1,6 @@
-<?php 
+<?php
 
 require __DIR__ . '/../vendor/autoload.php';
-
 
 use App\SqliteConnection;
 use Jenssegers\Blade\Blade;
@@ -9,7 +8,6 @@ use Jenssegers\Blade\Blade;
 $pdo = (new SQLiteConnection())->connect();
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-
     $query = 'SELECT content FROM nodes WHERE id=1';
     $html = $pdo->query($query)->fetch();
 
@@ -19,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
     $content = $_POST['html'];
     $query = 'UPDATE nodes SET content=? WHERE id=?';
     $pdo->prepare($query)->execute([htmlspecialchars($content), 1]);

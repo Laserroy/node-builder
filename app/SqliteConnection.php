@@ -2,18 +2,21 @@
 
 namespace App;
 
-class SqliteConnection {
+class SqliteConnection
+{
 
     private $pdo;
 
-    public function connect() {
+    public function connect()
+    {
         if ($this->pdo == null) {
             try {
                 $this->pdo = new \PDO("sqlite:" . DbConfig::PATH_TO_SQLITE_FILE);
-             } catch (\PDOException $e) {
+            } catch (\PDOException $e) {
                 echo $e;
-             }
+            }
         }
-        return $this->pdo;    
+
+        return $this->pdo;
     }
 }
