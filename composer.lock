@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53a70ed5280a127651e9fc6f7ddbf5cf",
+    "content-hash": "d7896cf05ea2a77663804b3d608266e3",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -98,22 +98,183 @@
             "time": "2020-05-29T15:13:26+00:00"
         },
         {
-            "name": "illuminate/container",
-            "version": "v7.28.2",
+            "name": "graham-campbell/result-type",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/illuminate/container.git",
-                "reference": "c0d892450f12ed22e4d8f7bec647230d0be8405b"
+                "url": "https://github.com/GrahamCampbell/Result-Type.git",
+                "reference": "7e279d2cd5d7fbb156ce46daada972355cea27bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/c0d892450f12ed22e4d8f7bec647230d0be8405b",
-                "reference": "c0d892450f12ed22e4d8f7bec647230d0be8405b",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/7e279d2cd5d7fbb156ce46daada972355cea27bb",
+                "reference": "7e279d2cd5d7fbb156ce46daada972355cea27bb",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^7.0",
-                "php": "^7.2.5",
+                "php": "^7.0|^8.0",
+                "phpoption/phpoption": "^1.7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5|^7.5|^8.5|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\ResultType\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "An Implementation Of The Result Type",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Result Type",
+                "Result-Type",
+                "result"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/result-type",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-04-13T13:17:36+00:00"
+        },
+        {
+            "name": "illuminate/bus",
+            "version": "v8.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/bus.git",
+                "reference": "e5a60b2f3b730dd0fbde1259f659ac8a43cb47c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/e5a60b2f3b730dd0fbde1259f659ac8a43cb47c7",
+                "reference": "e5a60b2f3b730dd0fbde1259f659ac8a43cb47c7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/collections": "^8.0",
+                "illuminate/contracts": "^8.0",
+                "illuminate/pipeline": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3"
+            },
+            "suggest": {
+                "illuminate/queue": "Required to use closures when chaining jobs (^7.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Bus\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Bus package.",
+            "homepage": "https://laravel.com",
+            "time": "2020-09-15T12:46:23+00:00"
+        },
+        {
+            "name": "illuminate/collections",
+            "version": "v8.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/collections.git",
+                "reference": "a4afcfaabcac3dd14178b541917b5534684a17eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/a4afcfaabcac3dd14178b541917b5534684a17eb",
+                "reference": "a4afcfaabcac3dd14178b541917b5534684a17eb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0",
+                "illuminate/macroable": "^8.0",
+                "php": "^7.3"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Required to use the dump method (^5.1)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Support\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Collections package.",
+            "homepage": "https://laravel.com",
+            "time": "2020-09-22T12:52:21+00:00"
+        },
+        {
+            "name": "illuminate/container",
+            "version": "v8.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/container.git",
+                "reference": "e89a1572cd5dd193f4d6a4a1c8baeeb1e0bfac5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/e89a1572cd5dd193f4d6a4a1c8baeeb1e0bfac5f",
+                "reference": "e89a1572cd5dd193f4d6a4a1c8baeeb1e0bfac5f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0",
+                "php": "^7.3",
                 "psr/container": "^1.0"
             },
             "provide": {
@@ -122,7 +283,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-master": "8.x-dev"
                 }
             },
             "autoload": {
@@ -142,31 +303,31 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-13T14:33:41+00:00"
+            "time": "2020-08-13T14:34:00+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.28.2",
+            "version": "v8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "cd12d3c23a3dbbb7b43e68b4105f68ad68d0c3cc"
+                "reference": "37ec3d86c2761628957b6d762ecd3bd27da754bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/cd12d3c23a3dbbb7b43e68b4105f68ad68d0c3cc",
-                "reference": "cd12d3c23a3dbbb7b43e68b4105f68ad68d0c3cc",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/37ec3d86c2761628957b6d762ecd3bd27da754bd",
+                "reference": "37ec3d86c2761628957b6d762ecd3bd27da754bd",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5",
+                "php": "^7.3",
                 "psr/container": "^1.0",
                 "psr/simple-cache": "^1.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-master": "8.x-dev"
                 }
             },
             "autoload": {
@@ -186,38 +347,44 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2020-09-07T02:45:15+00:00"
+            "time": "2020-09-16T13:57:35+00:00"
         },
         {
             "name": "illuminate/events",
-            "version": "v7.28.2",
+            "version": "v8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
-                "reference": "cd6170a6ef48d284a66429a786ce45575abc9c6b"
+                "reference": "dbb23fc8967acd82cf32b766c533e3dadd4b91f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/events/zipball/cd6170a6ef48d284a66429a786ce45575abc9c6b",
-                "reference": "cd6170a6ef48d284a66429a786ce45575abc9c6b",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/dbb23fc8967acd82cf32b766c533e3dadd4b91f1",
+                "reference": "dbb23fc8967acd82cf32b766c533e3dadd4b91f1",
                 "shasum": ""
             },
             "require": {
-                "illuminate/container": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5"
+                "illuminate/bus": "^8.0",
+                "illuminate/collections": "^8.0",
+                "illuminate/container": "^8.0",
+                "illuminate/contracts": "^8.0",
+                "illuminate/macroable": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-master": "8.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Illuminate\\Events\\": ""
-                }
+                },
+                "files": [
+                    "functions.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -231,27 +398,29 @@
             ],
             "description": "The Illuminate Events package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-24T13:15:53+00:00"
+            "time": "2020-08-24T13:16:11+00:00"
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.28.2",
+            "version": "v8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "192ceb4d7fe0900bec84258554be0d8d74fa0818"
+                "reference": "7d3ae538f7d247c83f25d39742867d1dce4baf81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/192ceb4d7fe0900bec84258554be0d8d74fa0818",
-                "reference": "192ceb4d7fe0900bec84258554be0d8d74fa0818",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/7d3ae538f7d247c83f25d39742867d1dce4baf81",
+                "reference": "7d3ae538f7d247c83f25d39742867d1dce4baf81",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5",
-                "symfony/finder": "^5.0"
+                "illuminate/collections": "^8.0",
+                "illuminate/contracts": "^8.0",
+                "illuminate/macroable": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3",
+                "symfony/finder": "^5.1"
             },
             "suggest": {
                 "ext-ftp": "Required to use the Flysystem FTP driver.",
@@ -261,12 +430,13 @@
                 "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
                 "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
                 "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
-                "symfony/mime": "Required to enable support for guessing extensions (^5.0)."
+                "symfony/filesystem": "Required to enable support for relative symbolic links (^5.1).",
+                "symfony/mime": "Required to enable support for guessing extensions (^5.1)."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-master": "8.x-dev"
                 }
             },
             "autoload": {
@@ -286,46 +456,133 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-25T13:29:03+00:00"
+            "time": "2020-09-08T12:44:09+00:00"
         },
         {
-            "name": "illuminate/support",
-            "version": "v7.28.2",
+            "name": "illuminate/macroable",
+            "version": "v8.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/illuminate/support.git",
-                "reference": "8ee8e0e719cda577e2ca5b78766a4b079bf332f8"
+                "url": "https://github.com/illuminate/macroable.git",
+                "reference": "561442f134eaf4d3f710bf523ecfe1537fa53f64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/8ee8e0e719cda577e2ca5b78766a4b079bf332f8",
-                "reference": "8ee8e0e719cda577e2ca5b78766a4b079bf332f8",
+                "url": "https://api.github.com/repos/illuminate/macroable/zipball/561442f134eaf4d3f710bf523ecfe1537fa53f64",
+                "reference": "561442f134eaf4d3f710bf523ecfe1537fa53f64",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Support\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Macroable package.",
+            "homepage": "https://laravel.com",
+            "time": "2020-06-08T14:13:16+00:00"
+        },
+        {
+            "name": "illuminate/pipeline",
+            "version": "v8.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/pipeline.git",
+                "reference": "a4be6ec161a7deaf22d77451641c1d49ebfc790b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/pipeline/zipball/a4be6ec161a7deaf22d77451641c1d49ebfc790b",
+                "reference": "a4be6ec161a7deaf22d77451641c1d49ebfc790b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Pipeline\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Pipeline package.",
+            "homepage": "https://laravel.com",
+            "time": "2020-09-15T12:29:15+00:00"
+        },
+        {
+            "name": "illuminate/support",
+            "version": "v8.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/support.git",
+                "reference": "f7a139ff6adf8fb6afffe895195a9de04c12a128"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/f7a139ff6adf8fb6afffe895195a9de04c12a128",
+                "reference": "f7a139ff6adf8fb6afffe895195a9de04c12a128",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.4|^2.0",
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "illuminate/contracts": "^7.0",
+                "illuminate/collections": "^8.0",
+                "illuminate/contracts": "^8.0",
+                "illuminate/macroable": "^8.0",
                 "nesbot/carbon": "^2.17",
-                "php": "^7.2.5",
+                "php": "^7.3",
                 "voku/portable-ascii": "^1.4.8"
             },
             "conflict": {
                 "tightenco/collect": "<5.5.33"
             },
             "suggest": {
-                "illuminate/filesystem": "Required to use the composer class (^7.0).",
-                "moontoast/math": "Required to use ordered UUIDs (^1.1).",
-                "ramsey/uuid": "Required to use Str::uuid() (^3.7|^4.0).",
-                "symfony/process": "Required to use the composer class (^5.0).",
-                "symfony/var-dumper": "Required to use the dd function (^5.0).",
-                "vlucas/phpdotenv": "Required to use the Env class and env helper (^4.0)."
+                "illuminate/filesystem": "Required to use the composer class (^8.0).",
+                "ramsey/uuid": "Required to use Str::uuid() (^4.0).",
+                "symfony/process": "Required to use the composer class (^5.1).",
+                "symfony/var-dumper": "Required to use the dd function (^5.1).",
+                "vlucas/phpdotenv": "Required to use the Env class and env helper (^5.2)."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-master": "8.x-dev"
                 }
             },
             "autoload": {
@@ -348,35 +605,37 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-28T14:23:23+00:00"
+            "time": "2020-09-17T18:04:00+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v7.28.2",
+            "version": "v8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "8c58d239597da88c5cd8b01cd4e397c529597108"
+                "reference": "873a9b0f3e7f8838576e64911c148e9943d051ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/8c58d239597da88c5cd8b01cd4e397c529597108",
-                "reference": "8c58d239597da88c5cd8b01cd4e397c529597108",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/873a9b0f3e7f8838576e64911c148e9943d051ed",
+                "reference": "873a9b0f3e7f8838576e64911c148e9943d051ed",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "illuminate/container": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/events": "^7.0",
-                "illuminate/filesystem": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5"
+                "illuminate/collections": "^8.0",
+                "illuminate/container": "^8.0",
+                "illuminate/contracts": "^8.0",
+                "illuminate/events": "^8.0",
+                "illuminate/filesystem": "^8.0",
+                "illuminate/macroable": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-master": "8.x-dev"
                 }
             },
             "autoload": {
@@ -396,24 +655,24 @@
             ],
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
-            "time": "2020-09-14T13:24:58+00:00"
+            "time": "2020-09-21T14:02:20+00:00"
         },
         {
             "name": "jenssegers/blade",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jenssegers/blade.git",
-                "reference": "d221b717b4302ad71476ebd05abf0c2b98cbd7d8"
+                "reference": "22a3700e9fc469c19dd1c5e5bd1b9138195e421f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jenssegers/blade/zipball/d221b717b4302ad71476ebd05abf0c2b98cbd7d8",
-                "reference": "d221b717b4302ad71476ebd05abf0c2b98cbd7d8",
+                "url": "https://api.github.com/repos/jenssegers/blade/zipball/22a3700e9fc469c19dd1c5e5bd1b9138195e421f",
+                "reference": "22a3700e9fc469c19dd1c5e5bd1b9138195e421f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/view": "^5.5|^6.0|^7.0",
+                "illuminate/view": "^5.5|^6.0|^7.0|^8.0",
                 "php": ">=7.0"
             },
             "require-dev": {
@@ -454,20 +713,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-03-17T15:00:55+00:00"
+            "time": "2020-09-17T08:25:26+00:00"
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.40.0",
+            "version": "2.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d"
+                "reference": "d9a76d8b7eb0f97cf3a82529393245212f40ba3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6c7646154181013ecd55e80c201b9fd873c6ee5d",
-                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d9a76d8b7eb0f97cf3a82529393245212f40ba3b",
+                "reference": "d9a76d8b7eb0f97cf3a82529393245212f40ba3b",
                 "shasum": ""
             },
             "require": {
@@ -543,7 +802,72 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-11T19:00:58+00:00"
+            "time": "2020-09-23T08:17:37+00:00"
+        },
+        {
+            "name": "phpoption/phpoption",
+            "version": "1.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpOption\\": "src/PhpOption/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "Option Type for PHP",
+            "keywords": [
+                "language",
+                "option",
+                "php",
+                "type"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-20T17:29:33+00:00"
         },
         {
             "name": "psr/container",
@@ -704,6 +1028,82 @@
                 }
             ],
             "time": "2020-08-17T10:01:29+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/1c302646f6efc070cd46856e600e5e0684d6b454",
+                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.18-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1028,6 +1428,82 @@
                 }
             ],
             "time": "2020-09-07T11:33:47+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "fba64139db67123c7a57072e5f8d3db10d160b66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/fba64139db67123c7a57072e5f8d3db10d160b66",
+                "reference": "fba64139db67123c7a57072e5f8d3db10d160b66",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "graham-campbell/result-type": "^1.0.1",
+                "php": "^7.1.3 || ^8.0",
+                "phpoption/phpoption": "^1.7.4",
+                "symfony/polyfill-ctype": "^1.17",
+                "symfony/polyfill-mbstring": "^1.17",
+                "symfony/polyfill-php80": "^1.17"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "ext-filter": "*",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.2 || ^9.0"
+            },
+            "suggest": {
+                "ext-filter": "Required to use the boolean validator."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "https://vancelucas.com/"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-14T15:57:31+00:00"
         },
         {
             "name": "voku/portable-ascii",

@@ -2,10 +2,10 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use App\SqliteConnection;
+use App\DbConnection;
 use Jenssegers\Blade\Blade;
 
-$pdo = (new SQLiteConnection())->connect();
+$pdo = DbConnection::make();
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $query = 'SELECT content FROM nodes WHERE id=1';
