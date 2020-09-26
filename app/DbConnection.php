@@ -9,9 +9,10 @@ class DbConnection
 {
     public static function make()
     {
-        $dotenv = Dotenv::createUnsafeImmutable(__DIR__ . '/..');
-        $dotenv->load();
-
+        if (file_exists(__DIR__ . '/../.env')) {
+            $dotenv = Dotenv::createUnsafeImmutable(__DIR__ . '/..');
+            $dotenv->load();
+        }
         $db = parse_url(getenv("DATABASE_URL"));
 
         try {
